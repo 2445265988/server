@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.6.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.example</groupId>
+    <artifactId>server</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>server</name>
+    <description>Demo project for Spring Boot</description>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <version>2.6.2</version>
+        </dependency>
+
+        <!--gephi-->
+        <dependency>
+            <groupId>net.java.dev.stax-utils</groupId>
+            <artifactId>stax-utils</artifactId>
+            <version>20070216</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.bea.xml</groupId>
+                    <artifactId>jsr173-ri</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.13</version>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-openide-util</artifactId>
+            <version>RELEASE123</version>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-openide-util-lookup</artifactId>
+            <version>RELEASE123</version>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-openide-nodes</artifactId>
+            <version>RELEASE123</version>
+        </dependency>
+        <dependency>
+            <groupId>org.gephi</groupId>
+            <artifactId>gephi-toolkit</artifactId>
+            <version>0.9.2</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.netbeans.modules</groupId>
+                    <artifactId>org-netbeans-modules-masterfs</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.netbeans.modules</groupId>
+                    <artifactId>org-netbeans-core-startup-base</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.netbeans.modules</groupId>
+                    <artifactId>org-netbeans-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.netbeans.api</groupId>
+                    <artifactId>org-openide-util</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.netbeans.api</groupId>
+                    <artifactId>org-openide-util-lookup</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.netbeans.api</groupId>
+                    <artifactId>org-openide-filesystems</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.netbeans.api</groupId>
+                    <artifactId>org-openide-util-ui</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.netbeans.api</groupId>
+                    <artifactId>org-openide-dialogs</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.netbeans.api</groupId>
+                    <artifactId>org-openide-nodes</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.netbeans.api</groupId>
+                    <artifactId>org-netbeans-api-annotations-common</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>net.java.dev</groupId>
+                    <artifactId>stax-utils</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!--mysql-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <!--neo4j-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-neo4j</artifactId>
+        </dependency>
+        <!--jpa-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <version>2.4</version>
+            <classifier>jdk15</classifier>
+        </dependency>
+        <dependency>
+            <groupId>com.vaadin.external.google</groupId>
+            <artifactId>android-json</artifactId>
+            <version>0.0.20131108.vaadin1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!-- 添加jieba的依赖项 -->
+        <dependency>
+            <groupId>com.huaban</groupId>
+            <artifactId>jieba-analysis</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+
+<!--        mybatis-->
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.yml</include>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.yml</include>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+
+
+
+    </build>
+
+</project>
